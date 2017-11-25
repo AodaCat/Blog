@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Aodacat</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 850px;
+        }
+        .auto-style2 {
+            height: 111px;
+            color: #FF6666;
+        }
+        .auto-style3 {
+            width: 850px;
+            height: 111px;
+            background-color: #FFFFFF;
+        }
+        .auto-style4 {
+            height: 425px;
+        }
+        .auto-style5 {
+            width: 850px;
+            height: 425px;
+        }
+        .auto-style6 {
+            width: 165px;
+            height: 446px;
+            background-color: #00FFFF;
+        }
+        .auto-style7 {
+            height: 111px;
+        }
+        .auto-style8 {
+            height: 446px;
+        }
+    </style>
+
+</head>
+<body style="height: 669px">
+    <form id="form1" runat="server">
+    <div style="height: 100%;">
+        <table style="width: 100%; height: 100%;">
+            <tr>
+                <td class="auto-style7"></td>
+                <td class="auto-style3"></td>
+                <td class="auto-style2"></td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style5">
+                    <table style="width:100%; height:100%;">
+                        <tr>
+                            <td class="auto-style6">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td class="auto-style8" style="background-color: #99FF66">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                       
+                    </table>
+                </td>
+                <td class="auto-style4"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
